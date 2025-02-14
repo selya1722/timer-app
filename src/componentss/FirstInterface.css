@@ -1,0 +1,117 @@
+/* iPhone Mockup Container */
+.iphone-mockup {
+  width: 250px; /* iPhone size */
+  height: 580px; /* iPhone size */
+  border-radius: 40px; /* Rounded edges like an iPhone */
+  border: 2px solid #cccccc;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+.iphone-notch {
+  position: absolute;
+  top: 10px; /* Distance from the top */
+  left: 50%; /* Center horizontally */
+  width: 70px; /* Notch width for a more realistic size */
+  height: 5px; /* Notch height */
+  background-color: #666464;
+  border-radius: 36px;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+.app-title {
+  position: absolute;
+  top: 80px;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Title Bar at the top */
+.title-bar {
+  width: 100%;
+  height: 40px;
+  background-color: rgba(242, 242, 242, 0.8); /* Light grey with slight transparency */
+  border-bottom: 1px solid #d6d6d6; /* Subtle border for separation */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #333333;
+  box-sizing: border-box;
+  z-index: 1;
+  margin-top: 50px; /* Space to simulate space below the notch */
+}
+
+
+
+
+.first-interface{
+  flex:1;
+  width: 250px;
+  height: 580px;
+  background-image: url('../assets/display.png'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  border: 1px solid #cccccc;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  position: relative; /* Required for child elements' absolute positioning */
+  overflow: hidden;
+}
+
+.lets-cook-button {
+  text-align: center;
+  background-color: #f392def6;
+  color: rgb(252, 249, 249);
+  border: none;
+  font-weight: bold;
+  padding: 0.8rem 1rem;
+  border-radius: 12px;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  position: absolute; 
+  bottom: 20px; /* Distance from the bottom edge */
+  left:28%; /* Horizontal centering */
+  transform: translateX(50%); /* Exact horizontal center correction */
+}
+
+
+.lets-cook-button:hover {
+  background-color: #8a1f43; /* Darker pink for hover effect */
+}
+/* App.css */
+@keyframes popUpInOut {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Add the continuous pop-up animation */
+.lets-cook-button {
+  animation: popUpInOut 1s ease-out infinite; /* Infinite loop */
+  transition: transform 0.3s ease;
+}
+

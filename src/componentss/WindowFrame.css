@@ -1,0 +1,39 @@
+/* iPhone Mockup Window Frame */
+.window-frame {
+  width: 250px; /* Adjusted width for smaller iPhone */
+  height: 500px; /* Match the height of the iPhone mockup */ 
+  border-radius: 16px;
+  overflow: hidden;
+  background-image: url('../assets/Bgc.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 1.2rem auto;
+  font-family: 'Arial', sans-serif;
+}
+
+
+/* Window Header Styled Like OS Window Tabs */
+
+
+.window-title {
+  font-weight: bold;
+  font-size: 0.9rem; /* Reduced font size */
+}
+
+.window-controls {
+  display: flex;
+  gap: 6px; /* Reduced gap */
+}
+
+
+/* Timer Input Field */
+.timer-input {
+  width: 75%; /* Adjusted width for the input field */
+  padding: 6px; /* Reduced padding */
+  font-size: 0.9rem; /* Reduced font size */
+  text-align: center;
+  margin-bottom: 0.8rem; /* Adjusted margin */
+  border: 2px solid #ff6f61;
+  border-radius: 8px;
+  outline: none;
+}
